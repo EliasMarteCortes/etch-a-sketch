@@ -5,3 +5,10 @@ for (i = 0; i <= 255; i++) {
     div.classList.add("square");
     container.appendChild(div);
 }
+
+container.addEventListener("mouseover",(e) => {
+    let target = e.target;
+    if (target.classList.contains("square")) {
+        target.style.backgroundColor = "black";
+    }
+})
