@@ -3,7 +3,7 @@ const container = document.querySelector("#container");
 for (i = 0; i <= 255; i++) {
     let square = document.createElement("div");
     square.classList.add("square");
-    container.appendChild(div);
+    container.appendChild(square);
 }
 
 container.addEventListener("mouseover",(e) => {
