@@ -26,6 +26,6 @@ container.addEventListener("mouseover",(e) => {
 })
 
 button.addEventListener("click",() => {
-    prompt("Enter grid size (e.g., 16 for 16 x 16) must not exceed 100:", 16);
+    let userGridSize = prompt("Enter grid size (e.g., 16 for 16 x 16) must not exceed 100:", 16);
 
 })
