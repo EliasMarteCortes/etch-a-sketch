@@ -3,7 +3,8 @@ const button = document.querySelector("#sizePrompt");
 
 
 function fillGrid(numSquares) {
-    let squareSize = 400 / numSquares;
+    let gridSize = container.offsetWidth;
+    let squareSize = gridSize / numSquares;
     numSquares = numSquares ** 2;
     for (i = 1; i <= numSquares; i++) {
         let square = document.createElement("div");
