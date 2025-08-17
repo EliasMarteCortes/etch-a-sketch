@@ -16,6 +16,13 @@ function fillGrid(numSquares) {
     return;
 }
 
+function clearGrid() {
+    const divs = document.querySelectorAll(".square");
+    for (let i = 0; i < divs.length; i++) {
+        container.removeChild(divs[i]);
+    }
+}
+
 fillGrid(16);
 
 container.addEventListener("mouseover",(e) => {
@@ -27,5 +34,11 @@ container.addEventListener("mouseover",(e) => {
 
 button.addEventListener("click",() => {
     let userGridSize = prompt("Enter grid size (e.g., 16 for 16 x 16) must not exceed 100:", 16);
-
+    if (userGridSize <= 100){
+        clearGrid();
+        fillGrid(userGridSize);
+    }
+    else {
+        alert("Grid size should not be greater than 100.");
+    }
 })
