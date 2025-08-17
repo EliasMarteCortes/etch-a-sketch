@@ -41,4 +41,5 @@ button.addEventListener("click",() => {
     else {
         alert("Grid size should not be greater than 100.");
     }
+    
 })
