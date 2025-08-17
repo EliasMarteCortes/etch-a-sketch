@@ -41,7 +41,7 @@ button.addEventListener("click",() => {
         clearGrid();
         fillGrid(userGridSize);
     }
-    else {
+    else if (userGridSize > 100) {
         alert("Grid size should not be greater than 100.");
     }
     
