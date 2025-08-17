@@ -36,3 +36,7 @@ body {
 .btn:hover {
     background-color: #e8e8e8;
 }
+
+h1 {
+    text-shadow: rgba(0,0,0,0.2) 3px 3px 3px;
+}
