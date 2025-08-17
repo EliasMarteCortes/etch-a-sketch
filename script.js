@@ -28,7 +28,10 @@ fillGrid(16);
 container.addEventListener("mouseover",(e) => {
     let target = e.target;
     if (target.classList.contains("square")) {
-        target.style.backgroundColor = "black";
+        let r = Math.floor(Math.random() * 255);
+        let g = Math.floor(Math.random() * 255);
+        let b = Math.floor(Math.random() * 255);
+        target.style.backgroundColor = `rgb(${r},${g},${b})`;
     }
 })
 
