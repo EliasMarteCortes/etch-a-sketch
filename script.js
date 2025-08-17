@@ -1,6 +1,6 @@
 const container = document.querySelector("#container");
 const button = document.querySelector("#sizePrompt");
-
+const clearBtn = document.querySelector("#clearBtn");
 
 function fillGrid(numSquares) {
     let gridSize = container.offsetWidth;
@@ -42,4 +42,11 @@ button.addEventListener("click",() => {
         alert("Grid size should not be greater than 100.");
     }
     
+})
+
+clearBtn.addEventListener("click", () => {
+    const divs = document.querySelectorAll(".square");
+    divs.forEach((square) => {
+        square.style.backgroundColor = "white";
+    })
 })
