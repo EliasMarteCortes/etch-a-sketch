@@ -35,6 +35,8 @@ body {
 
 .btn:hover {
     background-color: #e8e8e8;
+    transform: translate(3px,3px);
+    box-shadow: none;
 }
 
 h1 {
